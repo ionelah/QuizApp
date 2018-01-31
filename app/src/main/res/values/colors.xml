@@ -3,4 +3,11 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+    <color name="BtnTeamColor">#263238</color>
+    <color name="BtnTeamBackGrnd">#FF8A80</color>
+    <color name="BtnScoreTxtCol">#2E7D32</color>
+    <color name="BtnScoreBckgCol">#F0F4C3</color>
+    <color name="BtnRstCol">#263238</color>
+    <color name="BtnRstBg">#F9A825</color>
+    <color name="ColorView">#F44336</color>
 </resources>
