@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="BtnTeamSize">120dp</dimen>
+    <dimen name="TxtViewSize">80dp</dimen>
+    <dimen name="BtnTeamPad">10dp</dimen>
+    <dimen name="BtnScoreSize">120dp</dimen>
+    <dimen name="BtnSpace">10dp</dimen>
+    <dimen name="TxtViewMarginLeft">5dp</dimen>
+    <dimen name="TxtViewMarginTop">10dp</dimen>
+    <dimen name="RadioBtnMarginLeft">5dp</dimen>
+    <dimen name="RadioBtnMarginStart">10dp</dimen>
+    <dimen name="CheckBtnMarginLeft">5dp</dimen>
+    <dimen name="CheckBtnMarginStart">10dp</dimen>
+    <dimen name="TxtViewPad">10dp</dimen>
+    <dimen name="padding">10dp</dimen>
+    <dimen name="TeamPadding">20dp</dimen>
+    <dimen name="TeamTxtSize">20sp</dimen>
+    <dimen name="TitleSize">20sp</dimen>
+    <dimen name="question_size">15sp</dimen>
+    <dimen name="EditTxtMarginLeft">10dp</dimen>
+    <dimen name="EditTxtMarginStart">10dp</dimen>
+</resources>
