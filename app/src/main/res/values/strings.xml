@@ -1,16 +1,14 @@
 <resources>
     <string name="app_name">QuizApp</string>
-    <string name="team_a">Team A</string>
-    <string name="team_b">Team B</string>
-    <string name="BtnScoreTry">Try</string>
-    <string name="BtnScoreConv">Conversion</string>
-    <string name="BtnScorePnlty">Penalty Goal</string>
-    <string name="BtnScoreDrpGol">Drop Goal</string>
     <string name="BtnAnswer">Show Answers</string>
     <string name="QuizTitle"> How well do you know geography ? </string>
-    <string name="question_1">1. Which planet is closest to the sun?</string>
+    <string name="question_1">1. Which is the smallest continent on earth?</string>
     <string name="question_1_answer_1">Pluto</string>
     <string name="question_1_answer_2">Venus</string>
     <string name="question_1_answer_3">Mercury</string>
+    <string name="question_2">1. Which is the smallest continent on earth?</string>
+    <string name="question_2_answer_1">Pluto</string>
+    <string name="question_2_answer_2">Venus</string>
+    <string name="question_2_answer_3">Mercury</string>
     <string name="write">Write your answer</string>
 </resources>
