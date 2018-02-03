@@ -20,7 +20,10 @@ public class MainActivity extends AppCompatActivity {
     int score = 0;
     RadioButton question1;
     RadioButton question2;
-    CheckBox question3;
+    CheckBox question3_cb1;
+    CheckBox question3_cb2;
+    CheckBox question3_cb3;
+    CheckBox question3_cb4;
     EditText question4;
 
     RadioGroup radioGroup1;
@@ -30,17 +33,34 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+
+        radioGroup1 = findViewById(R.id.question_rg1);
+        radioGroup2 = findViewById(R.id.question_rg2);
+        question1 = findViewById(R.id.question_rg1_rb3);
+        question2 = findViewById(R.id.question_rg2_rb2);
+/**
+ * Get access to all checkboxes. We have to get the status of each one to correctly compute the correct answer
+ */
+        question3_cb1 = findViewById(R.id.question3_cb1);
+        question3_cb2 = findViewById(R.id.question3_cb2);
+        question3_cb3 = findViewById(R.id.question3_cb3);
+        question3_cb4 = findViewById(R.id.question3_cb4);
+        question4 = findViewById(R.id.question_EdTxt1);
     }
 
     /**
      * This method  triggers when the reset button is pressed*
      */
 
-    public void resetAnswers(View view) {
+    public void resetAnswers() {
 
         radioGroup1.clearCheck();
         radioGroup2.clearCheck();
-        question3.setChecked(false);
+        question3_cb1.setChecked(false);
+        question3_cb2.setChecked(false);
+        question3_cb3.setChecked(false);
+        question3_cb4.setChecked(false);
         question4.setText("");
 
     }
@@ -63,52 +83,15 @@ public class MainActivity extends AppCompatActivity {
             score += 1;
         }
 
-        boolean thirdQuestion =
-                jSunAnswer.isChecked();
-        if (thirdQuestion) {
-            score += 1;
-        }
-        boolean fourthQuestion =
-                jupiterAnswer.isChecked();
-        if (fourthQuestion) {
-            score += 1;
-        }
-        boolean fifthQuestion =
-                milkyWayAnswer.isChecked();
-        if (fifthQuestion) {
-            score += 1;
-        }
-        boolean sixthQuestion =
-                noMoonsAnswer.isChecked();
-        if (sixthQuestion) {
-            score += 1;
-        }
-        boolean seventhQuestion =
-                giantStormAnswer.isChecked();
-        if (seventhQuestion) {
-            score += 1;
-        }
-        boolean eightQuestion1 =
-                tiltedOrbit.isChecked();
-
-        boolean eightQuestion2 =
-                ringsSurrounded.isChecked();
-        if (eightQuestion1 && eightQuestion2) {
-            score += 1;
-
-        }
-        boolean ninthQuestion1 =
-                alphaCentauri.isChecked();
-        boolean ninthQuestion2 =
-                redDwarf.isChecked();
-        if (ninthQuestion1 && ninthQuestion2) {
+        if ((question3_cb2.isChecked() && question3_cb3.isChecked()) && !(question3_cb1.isChecked() || question3_cb4.isChecked())) {
             score += 1;
         }
 
-        String tenthQuestion = plutoAnswer.getText().toString();
-        if (tenthQuestion.contains("Pluto") || tenthQuestion.contains("Plutone"))
+        String fourthQuestion = question4.getText().toString();
+        if (fourthQuestion.contains("Australia"))
             score += 1;
-
+        else if (fourthQuestion.contains("australia") || fourthQuestion.contains("AUSTRALIA"))
+            score += 1;
         return (score);
 
     }
@@ -117,45 +100,10 @@ public class MainActivity extends AppCompatActivity {
      * it triggers when the Submit Answers button is pressed and it shows a Toast message with a score summary, based on the right answers given
      **/
 
-    public void submitAnswer(View view) {
-        String name = nameField.getText().toString();
-        int finalScore = calculateScore(score);
-        String finalScoreMessage = name + " you answered " + finalScore + " questions out of 10.";
-
-
-        if (finalScore >= 8) {
-            Toast.makeText(this, finalScoreMessage + "\n" +
-                    "Great! You know our Solar System very well!", Toast.LENGTH_LONG).show();
-        }
-
-        if (finalScore == 7) {
-            Toast.makeText(this, finalScoreMessage + "\n" + "You're on the right way! Keep following the stars...",
-                    Toast.LENGTH_LONG).show();
-        }
-
-        if (finalScore == 6) {
-            Toast.makeText(this, finalScoreMessage + "\n" + "You're on the right way! Keep following the stars...",
-                    Toast.LENGTH_LONG).show();
-        }
-
-        if (finalScore == 5) {
-            Toast.makeText(this, finalScoreMessage + "\n" + "You're on the right way! Keep following the stars...",
-                    Toast.LENGTH_LONG).show();
-        }
-
-        if (finalScore < 5) {
-            Toast.makeText(this, finalScoreMessage + "\n" + "Hmmm... It seems you need to learn more about..." + "\n" + "Try again",
-                    Toast.LENGTH_LONG).show();
-        }
-
-        Intent sendIntent = new Intent(this, Main2Activity.class);
-        String message = "I scored " + finalScore + " in the Solar System Quiz App. Join me and Try!";
-        sendIntent.putExtra("message", message);
-        startActivity(sendIntent);
-
-    }
-
-
     public void DisplayResults(View view) {
+        int finalScore = calculateScore(score);
+        String finalScoreMessage = "You answered " + finalScore + " questions out of 4.";
+        Toast.makeText(this, finalScoreMessage, Toast.LENGTH_LONG).show();
+        resetAnswers();
     }
 }

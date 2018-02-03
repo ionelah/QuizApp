@@ -50,7 +50,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="@dimen/TxtViewMarginLeft"
+                android:layout_marginStart="@dimen/TxtViewMarginLeft"
                 android:layout_marginTop="@dimen/TxtViewMarginTop"
                 android:text="@string/question_1"
                 android:textSize="@dimen/question_size" />
@@ -89,9 +89,9 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="@dimen/TxtViewMarginLeft"
+                android:layout_marginStart="@dimen/TxtViewMarginLeft"
                 android:layout_marginTop="@dimen/TxtViewMarginTop"
-                android:text="@string/question_1"
+                android:text="@string/question_2"
                 android:textSize="@dimen/question_size" />
 
             <RadioGroup
@@ -104,19 +104,19 @@
                     android:id="@+id/question_rg2_rb1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/question_1_answer_1" />
+                    android:text="@string/question_2_answer_1" />
 
                 <RadioButton
                     android:id="@+id/question_rg2_rb2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/question_1_answer_2" />
+                    android:text="@string/question_2_answer_2" />
 
                 <RadioButton
                     android:id="@+id/question_rg2_rb3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/question_1_answer_3" />
+                    android:text="@string/question_2_answer_3" />
             </RadioGroup>
         </LinearLayout>
 
@@ -128,34 +128,39 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="@dimen/TxtViewMarginLeft"
+                android:layout_marginStart="@dimen/TxtViewMarginLeft"
                 android:layout_marginTop="@dimen/TxtViewMarginTop"
-                android:text="@string/question_1"
+                android:text="@string/question_3"
                 android:textSize="@dimen/question_size" />
 
             <CheckBox
-                android:id="@+id/question_cb1"
+                android:id="@+id/question3_cb1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="@dimen/CheckBtnMarginLeft"
                 android:layout_marginStart="@dimen/CheckBtnMarginStart"
-                android:text="@string/question_1_answer_1" />
+                android:text="@string/question_3_answer_1" />
 
             <CheckBox
-                android:id="@+id/question_cb2"
+                android:id="@+id/question3_cb2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="@dimen/CheckBtnMarginLeft"
                 android:layout_marginStart="@dimen/CheckBtnMarginStart"
-                android:text="@string/question_1_answer_1" />
+                android:text="@string/question_3_answer_2" />
 
             <CheckBox
-                android:id="@+id/question_cb3"
+                android:id="@+id/question3_cb3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="@dimen/CheckBtnMarginLeft"
                 android:layout_marginStart="@dimen/CheckBtnMarginStart"
-                android:text="@string/question_1_answer_1" />
+                android:text="@string/question_3_answer_3" />
+
+            <CheckBox
+                android:id="@+id/question3_cb4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/CheckBtnMarginStart"
+                android:text="@string/question_3_answer_4" />
+
         </LinearLayout>
 
         <LinearLayout
@@ -166,16 +171,15 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="@dimen/TxtViewMarginLeft"
+                android:layout_marginStart="@dimen/TxtViewMarginLeft"
                 android:layout_marginTop="@dimen/TxtViewMarginTop"
-                android:text="@string/question_1"
+                android:text="@string/question_4"
                 android:textSize="@dimen/question_size" />
 
             <EditText
                 android:id="@+id/question_EdTxt1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="@dimen/EditTxtMarginLeft"
                 android:layout_marginStart="@dimen/EditTxtMarginStart"
                 android:hint="@string/write"
                 android:inputType="textCapWords"
