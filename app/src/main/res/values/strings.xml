@@ -19,5 +19,17 @@
     <string name="question_3_answer_4">Japan</string>
     <string name="question_4">4. Could you name the smalles continent on earth?</string>
     <string name="question_4_answer">Australia</string>
-    <string name="write">Write your answer</string>
+    <string name="write">Please, write your answer:</string>
+    <string name="question_5">5. Copenhagen is the capital of which country></string>
+    <string name="question_5_answer_1">Denmark</string>
+    <string name="question_5_answer_2">Finland</string>
+    <string name="question_5_answer_3">Island</string>
+    <string name="question_5_answer">Denmark</string>
+    <string name="question_6">6. Which are the countries on the Mediterranean coast?</string>
+    <string name="question_6_answer_1">Spain</string>
+    <string name="question_6_answer_2">Italy</string>
+    <string name="question_6_answer_3">Germany</string>
+    <string name="question_6_answer_4">Luxembourg</string>
+    <string name="question_7">7. In which country is the Vesuvius Mountain?</string>
+    <string name="question_7_answer">Italy</string>
 </resources>

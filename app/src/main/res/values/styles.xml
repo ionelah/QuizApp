@@ -3,7 +3,78 @@
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         <!-- Customize your theme here. -->
-
     </style>
 
+    <style name="LinearLayout" parent="@android:style/TextAppearance">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="TxtViewTitle" parent="android:style/TextAppearance">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/TitleSize</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <style name="TxtViewQuestion" parent="android:style/TextAppearance">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">@dimen/TxtViewMarginLeft</item>
+        <item name="android:layout_marginTop">@dimen/TxtViewMarginTop</item>
+        <item name="android:textSize">@dimen/QuestionSize</item>
+    </style>
+
+    <style name="RadioBtnGroup" parent="android:style/TextAppearance">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">@dimen/RadioBtnMarginStart</item>
+    </style>
+
+    <style name="RadioBtn" parent="android:style/TextAppearance">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="CheckBtn" parent="android:style/TextAppearance">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">@dimen/CheckBtnMarginStart</item>
+    </style>
+
+    <style name="EditTxt" parent="android:style/TextAppearance">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">@dimen/EditTxtMarginStart</item>
+        <item name="android:inputType">textCapWords</item>
+        <item name="android:textSize">@dimen/EditTxtSize</item>
+        <item name="android:hint">@string/write</item>
+    </style>
+
+    <style name="BtnScore" parent="android:style/TextAppearance">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:layout_marginBottom">@dimen/BtnSpace</item>
+        <item name="android:layout_marginTop">@dimen/BtnSpace</item>
+        <item name="android:background">@color/BtnRstBg</item>
+        <item name="android:padding">@dimen/BtnPad</item>
+        <item name="android:textColor">@color/BtnRstCol</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <!--
+    <style name="RelLay" parent="android:style/TextAppearance">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/RelLayHeight</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">top</item>
+    </style>-->
+    <style name="ImgView" parent="android:style/TextAppearance">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:scaleType">centerCrop</item>
+    </style>
 </resources>
